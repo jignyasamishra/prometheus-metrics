@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 5s  # Scrape targets every 5 seconds
+
+scrape_configs:
+  - job_name: 'go_application'
+    static_configs:
+      - targets: ['go_application:8085']
